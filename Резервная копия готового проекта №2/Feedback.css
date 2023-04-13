@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Стили для модального окна */
+.modal_feedback {
+    display: none;
+    /* по умолчанию модальное окно скрыто */
+    position: fixed;
+    /* позволяет модальному окну оставаться на месте, даже если страница прокручивается */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* позволяет модальному окну быть на переднем плане */
+}
+
+/* Стили для содержимого модального окна */
+.modal_content_feedback {
+    background-color: #C3B1A3;
+    margin: 15% auto;
+    border: 2px solid #BF916C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 580px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Стили для кнопки закрытия */
+.close_feedback {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.feedback_title {
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+.popup_name_feedback {
+    display: flex;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_number_feedback {
+    display: flex;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_about_feedback {
+    display: flex;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.input_name_feedback {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.input_phone_feedback {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.input_about_feedback {
+    width: 370px;
+    height: 134px;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.privacy_box_feedback {
+    padding-top: 10px;
+}
+
+.privacy_text_feedback {
+    text-decoration: none;
+    color: #3E3634;
+    font-size: 16px;
+}
+
+.button_box_feedback {
+    padding-top: 40px;
+}
+
+.submit_btn_feedback {
+    width: 121px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7F6D60;
+    color: #CCCCCC;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+#window_feedback {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+}
+
+#window_feedback:target {
+    display: block;
+    flex-direction: column;
+}
+
+.close_privacy_feedback {
+    font-size: 16px;
+    text-decoration: none;
+}
